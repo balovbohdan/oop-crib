@@ -9,7 +9,8 @@ import Layout from './Layout';
 import Home from './pages/home';
 import DesignPatterns from './pages/design-patterns';
 
-const history = createBrowserHistory({ basename: process.env.PUBLIC_URL });
+//{ basename: process.env.PUBLIC_URL }
+const history = createBrowserHistory();
 
 const Pages = () => (
   <Layout>
