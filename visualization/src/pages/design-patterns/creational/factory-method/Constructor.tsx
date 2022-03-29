@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
-import { FlexCell, FlexRow, RadioGroup, LabeledInput, NumericInput, Button } from '@epam/promo';
+import { FlexCell, FlexRow, RadioGroup, LabeledInput, NumericInput } from '@epam/promo';
 
 import css from './FactoryMethod.module.css';
 import { BUSINESS_TYPES, BUSINESS_TYPES_TO_VEHICLES, FACTORY_LOCATIONS } from './constants';
