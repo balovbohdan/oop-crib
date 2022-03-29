@@ -23,7 +23,7 @@ jobs:
         run: yarn install --pure-lockfile
 
       - name: Build Env Variables ✂️
-        run: echo PUBLIC_URL=oop-crib >> .env
+        run: echo PUBLIC_URL=. >> .env
 
       - name: Build 🏗️
         run: yarn run build
