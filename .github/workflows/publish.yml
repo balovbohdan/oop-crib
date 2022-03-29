@@ -30,5 +30,5 @@ jobs:
         env:
           REPO: self
           BRANCH: github-page
-          FOLDER: visualization/public
+          FOLDER: visualization/build
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
