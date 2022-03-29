@@ -1,6 +1,6 @@
 # [OOP Crib](https://balovbohdan.github.io/oop-crib/)
 
-Short notes about OOP Design Patterns + Interactive examples
+Short notes about OOP Design Patterns + Interactive examples.
 
 ## Contents
 - Coming soon...
