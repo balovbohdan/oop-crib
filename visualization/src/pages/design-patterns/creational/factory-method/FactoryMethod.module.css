@@ -1,0 +1,18 @@
+.panelRow {
+  gap: 20px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.vehicleImage {
+  display: block;
+  max-width: 150px;
+  max-height: 150px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
+
+.moveRight {
+  transform: translateX(1000px);
+  -webkit-transform: translateX(1000px);
+}
