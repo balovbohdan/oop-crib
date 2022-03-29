@@ -2,6 +2,8 @@ import shipImage from './ship.svg';
 import truckImage from './truck.svg';
 import bicycleImage from './bicycle.svg';
 
+console.log(bicycleImage)
+
 export const VEHICLES = {
   SHIP: 'ship',
   TRUCK: 'truck',
