@@ -13,9 +13,11 @@ const history = createBrowserHistory({ basename: process.env.PUBLIC_URL });
 
 const Pages = () => (
   <Layout>
-    <Route path="/" component={Home} exact />
-    <Route path="/design-patterns" component={DesignPatterns} />
-    <Redirect to="/" />
+    <Switch>
+      <Route path="/" component={Home} exact />
+      <Route path="/design-patterns" component={DesignPatterns} />
+      <Redirect to="/" />
+    </Switch>
   </Layout>
 );
 
@@ -27,11 +29,9 @@ const App = () => (
       loadAppContext={() => Promise.resolve({})}
       onInitCompleted={(context) => { Object.assign(services, context); }}>
       <ErrorHandler>
-        <Switch>
-          <Pages />
-          <Snackbar />
-          <Modals />
-        </Switch>
+        <Pages />
+        <Snackbar />
+        <Modals />
       </ErrorHandler>
     </ContextProvider>
   </Router>

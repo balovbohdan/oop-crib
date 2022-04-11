@@ -1,4 +1,5 @@
 type SerializedVehicle = {
+  type: string,
   speed: number,
   developedAt: string,
 };

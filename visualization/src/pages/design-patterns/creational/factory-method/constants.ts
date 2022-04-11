@@ -35,4 +35,5 @@ export const VEHICLES_TO_IMAGES = {
 export const TABS = {
   UML: 'UML',
   PLAIN_VEHICLE: 'PLAIN_VEHICLE',
+  CODE: 'CODE',
 };

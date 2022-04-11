@@ -16,3 +16,7 @@
   transform: translateX(1000px);
   -webkit-transform: translateX(1000px);
 }
+
+.uml {
+  width: 100%;
+}

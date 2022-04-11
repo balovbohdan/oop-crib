@@ -20,6 +20,7 @@ class Bicycle implements Vehicle {
 
   serialize() {
     return {
+      type: this.type,
       speed: this.speed,
       developedAt: this.developedAt,
     };

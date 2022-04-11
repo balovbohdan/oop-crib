@@ -9,7 +9,7 @@ import Meta from './Meta';
 
 const FactoryMethod = () => {
   const tryTimeoutIdRef = useRef<any>();
-  const [vehicle, setVehicle] = useState<Vehicle|null>(null);
+  const [vehicle, setVehicle] = useState<Vehicle | null>(null);
 
   const handleSettingsChange = useCallback((vehicle: Vehicle) => {
     setVehicle(vehicle);
@@ -29,10 +29,10 @@ const FactoryMethod = () => {
           vehicle && (
             <Reveal effect="fadeInUp">
               <Simulator vehicle={vehicle} />
+              <Meta vehicle={vehicle} />
             </Reveal>
           )
         }
-        <Meta />
       </Panel>
     </>
   );
