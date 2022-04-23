@@ -1,6 +1,9 @@
 import { useState, useCallback } from 'react';
+import { Reveal } from 'react-reveal';
 import { Text, Panel } from '@epam/promo';
 
+import Meta from './Meta';
+import Simulator from './Simulator';
 import Constructor from './Constructor';
 import { FurnitureProduct } from '../../../../patterns/creational/abstract-factory';
 
@@ -12,22 +15,22 @@ const AbstractFactory = () => {
     console.log(nextFurnitureProduct);
   }, []);
 
-  console.log(furnitureProduct);
-
   return (
     <>
       <Text fontSize="24" lineHeight="30" color="gray90">Abstract Factory</Text>
-      <Text fontSize="18" lineHeight="30" color="gray60">Create an appropriate furniture for your home</Text>
+      <Text fontSize="18" lineHeight="30" color="gray60">
+        Create an appropriate furniture for your home
+      </Text>
       <Panel>
         <Constructor onChange={handleSettingsChange} />
-        {/* {
-          vehicle && (
+        {
+          furnitureProduct && (
             <Reveal effect="fadeInUp">
-              <Simulator vehicle={vehicle} />
-              <Meta vehicle={vehicle} />
+              <Simulator furnitureProduct={furnitureProduct} />
+              <Meta furnitureProduct={furnitureProduct} />
             </Reveal>
           )
-        } */}
+        }
       </Panel>
     </>
   );

@@ -1,16 +1,11 @@
-type SerializedChair = {
-  type: string,
-  style: string,
-  complexity: number,
-  cost: number,
-};
+import { SerializedFurnitureProduct } from './types';
 
 interface Chair {
   readonly complexity: number;
   readonly cost: number;
 
   create(): Promise<void>;
-  serialize(): SerializedChair;
+  serialize(): SerializedFurnitureProduct;
 }
 
 export default Chair;

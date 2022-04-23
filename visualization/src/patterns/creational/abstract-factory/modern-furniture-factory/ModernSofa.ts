@@ -1,12 +1,15 @@
 import Sofa from '../Sofa';
+import { SerializedFurnitureProduct, DeliveryLocation } from '../types';
 
 class ModernSofa implements Sofa {
   readonly complexity: number;
   readonly cost: number;
+  readonly deliveryLocation: DeliveryLocation;
 
-  constructor(complexity: number, cost: number) {
+  constructor(complexity: number, cost: number, deliveryLocation: DeliveryLocation) {
     this.complexity = complexity;
     this.cost = cost;
+    this.deliveryLocation = deliveryLocation;
   }
 
   create(): Promise<void> {
@@ -22,12 +25,13 @@ class ModernSofa implements Sofa {
     });
   }
 
-  serialize() {
+  serialize(): SerializedFurnitureProduct {
     return {
       type: 'sofa',
       style: 'modern',
       complexity: this.complexity,
       cost: this.cost,
+      deliveryLocation: this.deliveryLocation,
     };
   }
 }

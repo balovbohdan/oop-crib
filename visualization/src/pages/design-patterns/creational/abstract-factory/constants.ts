@@ -1,3 +1,17 @@
+import modernChairImage from './modern-chair.svg';
+import modernSofaImage from './modern-sofa.svg';
+import victorianChairImage from './victorian-chair.svg';
+import victorianSofaImage from './victorian-sofa.svg';
+import ukraineFlagImage from './ukraine-flag.svg';
+import unitedKingdomFlagImage from './united-kingdom-flag.svg';
+import norwayFlagImage from './norway-flag.svg';
+
+export const TABS = {
+  UML: 'UML',
+  PLAIN: 'PLAIN',
+  CODE: 'CODE',
+};
+
 export const FURNITURE_TYPES = {
   CHAIR: 'chair',
   SOFA: 'sofa',
@@ -40,4 +54,21 @@ export const DELIVERY_LOCATIONS_TO_COST_COEFFICIENTS = {
   [DELIVERY_LOCATIONS.UKRAINE]: 1,
   [DELIVERY_LOCATIONS.UNITED_KINGDOM]: 1.5,
   [DELIVERY_LOCATIONS.NORWAY]: 3,
+};
+
+export const FURNITURE_PRODUCT_IMAGES = {
+  victorian: {
+    chair: victorianChairImage,
+    sofa: victorianSofaImage,
+  },
+  modern: {
+    chair: modernChairImage,
+    sofa: modernSofaImage,
+  },
+};
+
+export const FLAG_IMAGES = {
+  [DELIVERY_LOCATIONS.UKRAINE]: ukraineFlagImage,
+  [DELIVERY_LOCATIONS.UNITED_KINGDOM]: unitedKingdomFlagImage,
+  [DELIVERY_LOCATIONS.NORWAY]: norwayFlagImage,
 };

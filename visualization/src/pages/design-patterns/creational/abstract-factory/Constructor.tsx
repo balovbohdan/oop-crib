@@ -3,7 +3,11 @@ import { FlexRow, FlexCell, LabeledInput, RadioGroup } from '@epam/promo';
 
 import css from './AbstractFactory.module.css';
 import * as constants from './constants';
-import { FurnitureProduct, FurnitureFactorySystem } from '../../../../patterns/creational/abstract-factory';
+import {
+  FurnitureProduct,
+  FurnitureFactorySystem,
+  DeliveryLocation,
+} from '../../../../patterns/creational/abstract-factory';
 
 type Props = {
   onChange: (furnitureProduct: FurnitureProduct) => void,
@@ -15,7 +19,9 @@ const Constructor = (props: Props) => {
   const [furnitureType, setFurnitureType] = useState<string>(constants.FURNITURE_TYPES.CHAIR);
   const [furnitureStyle, setFurnitureStyle] = useState<string>(constants.FURNITURE_STYLES.MODERN);
   const [furnitureMeterial, setFurnitureMaterial] = useState<string>(constants.FURNITURE_MATERIALS.CHEAP);
-  const [deliveryLocation, setDeliveryLocation] = useState<string>(constants.DELIVERY_LOCATIONS.UKRAINE);
+  const [deliveryLocation, setDeliveryLocation] = useState<DeliveryLocation>(
+    constants.DELIVERY_LOCATIONS.UKRAINE as DeliveryLocation,
+  );
 
   const furnitureTypeItems = useMemo(() => (
     Object.values(constants.FURNITURE_TYPES).map((item) => ({ id: item, name: item }))
@@ -42,11 +48,11 @@ const Constructor = (props: Props) => {
 
     switch (furnitureType) {
       case constants.FURNITURE_TYPES.CHAIR:
-        return furnitureFactorySystem.createChair(complexity, costWithDelivery);
+        return furnitureFactorySystem.createChair(complexity, costWithDelivery, deliveryLocation);
       case constants.FURNITURE_TYPES.SOFA:
-        return furnitureFactorySystem.createSofa(complexity, costWithDelivery);
+        return furnitureFactorySystem.createSofa(complexity, costWithDelivery, deliveryLocation);
       default:
-        return furnitureFactorySystem.createChair(complexity, costWithDelivery);
+        return furnitureFactorySystem.createChair(complexity, costWithDelivery, deliveryLocation);
     }
   }, [furnitureType, furnitureStyle, furnitureMeterial, deliveryLocation]);
 

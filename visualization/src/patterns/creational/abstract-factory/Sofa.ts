@@ -1,16 +1,11 @@
-type SerializedSofa = {
-  type: string,
-  style: string,
-  complexity: number,
-  cost: number,
-};
+import { SerializedFurnitureProduct } from './types';
 
 interface Sofa {
   readonly complexity: number;
   readonly cost: number;
 
   create(): Promise<void>;
-  serialize(): SerializedSofa;
+  serialize(): SerializedFurnitureProduct;
 }
 
 export default Sofa;

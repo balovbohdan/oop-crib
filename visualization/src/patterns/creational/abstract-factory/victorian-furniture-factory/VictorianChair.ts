@@ -1,12 +1,15 @@
 import Chair from '../Chair';
+import { SerializedFurnitureProduct, DeliveryLocation } from '../types';
 
 class VictorianChair implements Chair {
   readonly complexity: number;
   readonly cost: number;
+  readonly deliveryLocation: DeliveryLocation;
 
-  constructor(complexity: number, cost: number) {
+  constructor(complexity: number, cost: number, deliveryLocation: DeliveryLocation) {
     this.complexity = complexity;
     this.cost = cost;
+    this.deliveryLocation = deliveryLocation;
   }
 
   create(): Promise<void> {
@@ -22,12 +25,13 @@ class VictorianChair implements Chair {
     });
   }
 
-  serialize() {
+  serialize(): SerializedFurnitureProduct {
     return {
       type: 'chair',
       style: 'victorian',
       complexity: this.complexity,
       cost: this.cost,
+      deliveryLocation: this.deliveryLocation,
     };
   }
 }

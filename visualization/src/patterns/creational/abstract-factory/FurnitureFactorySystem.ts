@@ -1,6 +1,7 @@
 import FurnitureFactory from './FurnitureFactory';
 import ModernFurnitureFactory from './modern-furniture-factory';
 import VictorianFurnitureFactory from './victorian-furniture-factory';
+import { DeliveryLocation } from './types';
 
 class FurnitureFactorySystem {
   private readonly furnitureFactory: FurnitureFactory;
@@ -20,12 +21,12 @@ class FurnitureFactorySystem {
     }
   }
 
-  createChair(complexity: number, cost: number) {
-    return this.furnitureFactory.createChair(complexity, cost);
+  createChair(complexity: number, cost: number, deliveryLocation: DeliveryLocation) {
+    return this.furnitureFactory.createChair(complexity, cost, deliveryLocation);
   }
 
-  createSofa(complexity: number, cost: number) {
-    return this.furnitureFactory.createSofa(complexity, cost);
+  createSofa(complexity: number, cost: number, deliveryLocation: DeliveryLocation) {
+    return this.furnitureFactory.createSofa(complexity, cost, deliveryLocation);
   }
 }
 
