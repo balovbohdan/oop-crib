@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import { FlexRow, TabButton, Button } from '@epam/promo';
 
 import { TABS } from './constants';
@@ -18,8 +17,6 @@ type TabProps = {
 };
 
 const Tab = (props: TabProps) => {
-  const history = useHistory();
-
   switch (props.activeTab) {
     case TABS.UML: {
       return <img className={css.uml} src={uml} alt="factory method uml" />;

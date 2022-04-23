@@ -1,6 +1,5 @@
 import { useState, useCallback } from 'react';
 import { Text, Panel } from '@epam/promo';
-import { Reveal } from 'react-reveal';
 
 import Constructor from './Constructor';
 import { FurnitureProduct } from '../../../../patterns/creational/abstract-factory';
@@ -12,6 +11,8 @@ const AbstractFactory = () => {
     setFurnitureProduct(nextFurnitureProduct);
     console.log(nextFurnitureProduct);
   }, []);
+
+  console.log(furnitureProduct);
 
   return (
     <>
