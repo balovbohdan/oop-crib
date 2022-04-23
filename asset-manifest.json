@@ -1,19 +1,28 @@
 {
   "files": {
-    "main.css": "/oop-crib/static/css/main.26392a8e.css",
-    "main.js": "/oop-crib/static/js/main.47737f21.js",
+    "main.css": "/oop-crib/static/css/main.c92e0b92.css",
+    "main.js": "/oop-crib/static/js/main.2f038803.js",
+    "static/media/uml-abstract-factory.svg": "/oop-crib/static/media/uml-abstract-factory.7d1b8e32f80e1f07e7706d58d30ca207.svg",
     "static/media/uml-factory-method.svg": "/oop-crib/static/media/uml-factory-method.7d1b8e32f80e1f07e7706d58d30ca207.svg",
     "static/media/bicycle.svg": "/oop-crib/static/media/bicycle.ddc913921b0d3f71756b76cf245aabd1.svg",
+    "static/media/modern-chair.svg": "/oop-crib/static/media/modern-chair.92a5d6cf4c0a390cb81b4e5a2219ba57.svg",
+    "static/media/victorian-chair.svg": "/oop-crib/static/media/victorian-chair.874efb39c57702889d8d1bfe0daeb538.svg",
+    "static/media/victorian-sofa.svg": "/oop-crib/static/media/victorian-sofa.a2c6c37de95ccdac3781140a09ece4bd.svg",
     "static/media/ship.svg": "/oop-crib/static/media/ship.4dfe19408769b57d0a7e755acf1f4290.svg",
     "static/media/truck.svg": "/oop-crib/static/media/truck.95e79d533d99df7f8d8a533e9cfeaad4.svg",
+    "static/media/united-kingdom-flag.svg": "/oop-crib/static/media/united-kingdom-flag.70e4e37f995bf1f7df6ae8200a59df29.svg",
+    "static/media/delivery.svg": "/oop-crib/static/media/delivery.b7bf570eead7ddd7d52f12bfb0e7dce4.svg",
+    "static/media/modern-sofa.svg": "/oop-crib/static/media/modern-sofa.ceef22d7e387df56b9fd32cbc2de1041.svg",
+    "static/media/norway-flag.svg": "/oop-crib/static/media/norway-flag.6db693eee007f9e01d1e10432858549e.svg",
     "static/media/logo.svg": "/oop-crib/static/media/logo.f530c1fde27931cdc4379231e9cf0dd8.svg",
     "static/media/social-network-github-24.svg": "/oop-crib/static/media/social-network-github-24.95fc7c448774e56902a68f2e0c116b26.svg",
+    "static/media/ukraine-flag.svg": "/oop-crib/static/media/ukraine-flag.f837fc7db021e02c056c1a7118e34ac6.svg",
     "index.html": "/oop-crib/index.html",
-    "main.26392a8e.css.map": "/oop-crib/static/css/main.26392a8e.css.map",
-    "main.47737f21.js.map": "/oop-crib/static/js/main.47737f21.js.map"
+    "main.c92e0b92.css.map": "/oop-crib/static/css/main.c92e0b92.css.map",
+    "main.2f038803.js.map": "/oop-crib/static/js/main.2f038803.js.map"
   },
   "entrypoints": [
-    "static/css/main.26392a8e.css",
-    "static/js/main.47737f21.js"
+    "static/css/main.c92e0b92.css",
+    "static/js/main.2f038803.js"
   ]
 }
