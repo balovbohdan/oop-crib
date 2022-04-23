@@ -1,4 +1,3 @@
-import { resolve } from 'dns';
 import Chair from '../Chair';
 
 class ModernChair implements Chair {
